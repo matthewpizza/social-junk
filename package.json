@@ -1,0 +1,22 @@
+{
+  "name": "social-junk",
+  "version": "1.0.0",
+  "description": "Asynchronously load social libraries as needed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-js": "uglifyjs social-junk.js -o social-junk.min.js -c -m"
+  },
+  "repository": {
+    "type": "git",
+    "url" : "https://github.com/matthewspencer/social-junk.git"
+  },
+  "author": {
+    "name": "Matthew Spencer",
+    "url": "https://matthewspencer.me"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "uglify-js": "^2.4.20"
+  }
+}
