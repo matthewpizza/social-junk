@@ -1,0 +1,30 @@
+{
+  "name": "social-junk",
+  "main": "social-junk.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/matthewspencer/social-junk",
+  "authors": [
+    "Matthew Spencer"
+  ],
+  "description": "Asynchronously load social libraries as needed.",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "facebook",
+    "twitter",
+    "google+",
+    "social",
+    "buttons"
+  ],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
