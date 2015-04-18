@@ -22,6 +22,12 @@ new SocialJunk();
 
 Optionally set your Facebook App Id.
 
+```javascript
+new SocialJunk( {
+	facebookAppId: '123456789'
+} );
+```
+
 ## Events
 
 ### Facebook
