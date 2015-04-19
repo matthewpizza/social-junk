@@ -1,7 +1,7 @@
 {
   "name": "social-junk",
   "version": "1.0.0",
-  "description": "Asynchronously load social libraries as needed.",
+  "description": "Asynchronously load social libraries as needed. Or not.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
