@@ -18,6 +18,7 @@
 		this.options = options || {};
 
 		if ( this.hasFacebookMarkup() ) {
+			this.createFacebookRootElement();
 			this.loadFacebookLibrary();
 		}
 
@@ -26,6 +27,8 @@
 		}
 
 		if ( this.hasTwitterMarkup() ) {
+			this.createTwitterObject();
+			this.bindTwttrEvents();
 			this.loadTwitterLibrary();
 		}
 
@@ -104,8 +107,6 @@
 	 * @see https://developers.facebook.com/docs/javascript
 	 */
 	SocialJunk.prototype.loadFacebookLibrary = function () {
-
-		this.createFacebookRootElement();
 
 		var url = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3';
 
@@ -213,11 +214,7 @@
 	 */
 	SocialJunk.prototype.loadTwitterLibrary = function () {
 
-		this.createTwitterObject();
-
 		this.loadLibrary( 'https://platform.twitter.com/widgets.js', 'twitter-wjs', this.twitterEvents );
-
-		this.bindTwttrEvents();
 
 	};
 
